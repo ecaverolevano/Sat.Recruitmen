@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Common\Interfaces\IApplicationDbContext.cs~RFb5bb8d4.TMP" />
+    <None Remove="Common\Interfaces\IApplicationDbContext.cs~RFb7c88db.TMP" />
+    <None Remove="CQRS\Users\Queries\GetUserById\GetUserByIdDto.cs~RFbb2e1e1.TMP" />
+    <None Remove="CQRS\Users\Queries\GetUserById\GetUserByIdDto.cs~RFfd0e229.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+	<PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.4" />
+	<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+</Project>
